@@ -1,0 +1,76 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+  margin-left: 25%;
+  margin-right: 25%;
+  color: white;
+  text-align: center; 
+  overflow-wrap: break-word;
+  font-size: 25px;
+}
+
+
+body {
+    margin: 0;
+    /* background-image: url("http://www.flyingstart.uk.com/wp-content/uploads/2014/12/Merry-Christmas-pictures-free.jpg"); */
+    background-color: #111;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  
+  .snow {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .snow__item {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    will-change: box-shadow;
+    -webkit-animation: snow 10000ms linear infinite;
+            animation: snow 10000ms linear infinite;
+  }
+  .snow__item:nth-child(2) {
+    left: 25vw;
+    -webkit-animation-delay: 6666ms;
+            animation-delay: 6666ms;
+  }
+  .snow__item:nth-child(3) {
+    right: 25vw;
+    -webkit-animation-delay: 3333ms;
+            animation-delay: 3333ms;
+  }
+  @-webkit-keyframes snow {
+    0% {
+      box-shadow: 0 0 0 transparent, 14vw -102vh 6px 3px #f288a5, -87vw -135vh 8px 4px #10c9ab, 36vw -100vh 2px 2px #cab3a8, -71vw -63vh 4px 5px #a40ee3, 13vw -94vh 8px 4px #9f2257, -66vw -134vh 4px 1px #f7847f, 24vw -58vh 7px 2px #2722fe, -77vw -66vh 8px 3px #75e926, 47vw -72vh 7px 1px #8821ae, -82vw -123vh 3px 3px #ce9e08, 87vw -111vh 4px 3px #d9a405, -22vw -100vh 3px 4px #c19123, 31vw -133vh 1px 2px #cbdd0a, -22vw -85vh 1px 3px #d23078, 93vw -93vh 3px 1px #348afe, -87vw -50vh 2px 1px #5d8599, 27vw -112vh 1px 2px #cc6c7f, -57vw -146vh 5px 1px #f58d68, 53vw -126vh 8px 5px #19bd1e, -26vw -125vh 8px 5px #4cdc15, 89vw -59vh 3px 2px #bd3e6e, -59vw -148vh 2px 2px #af3c68, 56vw -130vh 5px 3px #b82712, -89vw -109vh 2px 3px #679e57, 65vw -65vh 5px 3px #42973c, -73vw -80vh 1px 2px #295ae1, 11vw -110vh 1px 5px #58ee0f, -29vw -124vh 5px 4px #bb9a1b, 62vw -104vh 5px 3px #724747, -97vw -126vh 4px 2px #6adf02, 17vw -116vh 5px 5px #d7a4a5, -90vw -141vh 1px 3px #2bc018, 78vw -52vh 8px 4px #663aa2, -52vw -114vh 5px 1px #362041, 44vw -122vh 6px 4px #716349, -63vw -50vh 2px 2px #4f2f74, 58vw -69vh 6px 1px #70ed2c, -19vw -60vh 8px 5px #ca1c68, 90vw -65vh 2px 4px #37caae, -1vw -55vh 6px 1px #2e7035, 27vw -77vh 5px 1px #5f77bf, -69vw -50vh 1px 2px #0a84fa, 64vw -108vh 4px 5px #a68c27, -45vw -122vh 2px 4px #7ad1ee, 78vw -98vh 8px 5px #783f21, -15vw -66vh 2px 4px #7ed02b, 30vw -56vh 2px 4px #b5f53e, -71vw -98vh 4px 5px #5c2aa8, 21vw -93vh 8px 2px #ec9dba, -57vw -99vh 5px 2px #e82ae8;
+    }
+    100% {
+      box-shadow: 0 0 0 transparent, 52vw 101vh 1px 4px #237913, -31vw 140vh 7px 5px #a510ec, 16vw 102vh 1px 4px #a6ba03, -88vw 81vh 7px 2px #accf7d, 27vw 99vh 7px 3px #eb3904, -8vw 61vh 7px 1px #70e104, 53vw 105vh 8px 2px #43ab2e, -61vw 119vh 3px 5px #bb8ef5, 89vw 107vh 6px 2px #f5831b, -20vw 104vh 1px 3px #12b4d9, 7vw 118vh 4px 4px #02f45b, -9vw 134vh 7px 4px #9f8ea4, 26vw 123vh 2px 4px #a4c109, -49vw 82vh 2px 3px #61810d, 84vw 74vh 5px 3px #96523e, -59vw 98vh 1px 5px #3d0dcd, 45vw 94vh 7px 3px #a12a93, -52vw 95vh 5px 5px #2de7d6, 100vw 98vh 6px 2px #61fb9c, -2vw 117vh 6px 1px #c4ab6a, 53vw 55vh 4px 1px #02cdbe, -3vw 88vh 7px 3px #a6b260, 73vw 141vh 3px 5px #ef50c1, -75vw 129vh 4px 1px #76d6ce, 60vw 89vh 8px 1px #4be7a3, -7vw 110vh 6px 2px #01b44a, 98vw 134vh 5px 1px #59c515, -58vw 88vh 3px 2px #fa1704, 56vw 117vh 8px 1px #5235ad, -54vw 145vh 2px 3px #41cafb, 97vw 141vh 1px 2px #7b6aee, -11vw 81vh 3px 3px #3f38c6, 63vw 70vh 6px 1px #f73701, -36vw 102vh 1px 5px #0e4c31, 1vw 101vh 8px 1px #4850c8, -18vw 88vh 4px 3px #8a4038, 8vw 126vh 6px 1px #61c036, -21vw 132vh 7px 1px #c3ef9b, 18vw 149vh 8px 1px #923976, -15vw 68vh 8px 2px #45423b, 18vw 92vh 2px 2px #6cbf35, -12vw 115vh 6px 1px #f33272, 68vw 69vh 7px 1px #c56a21, -99vw 147vh 1px 4px #c0f062, 34vw 146vh 6px 2px #421250, -69vw 137vh 3px 3px #cf49c9, 85vw 95vh 1px 4px #0c4c84, -24vw 129vh 3px 4px #dc363b, 42vw 87vh 8px 4px #b5fca7, -21vw 88vh 4px 1px #75d2e4;
+    }
+  }
+  @keyframes snow {
+    0% {
+      box-shadow: 0 0 0 transparent, 14vw -102vh 6px 3px #f288a5, -87vw -135vh 8px 4px #10c9ab, 36vw -100vh 2px 2px #cab3a8, -71vw -63vh 4px 5px #a40ee3, 13vw -94vh 8px 4px #9f2257, -66vw -134vh 4px 1px #f7847f, 24vw -58vh 7px 2px #2722fe, -77vw -66vh 8px 3px #75e926, 47vw -72vh 7px 1px #8821ae, -82vw -123vh 3px 3px #ce9e08, 87vw -111vh 4px 3px #d9a405, -22vw -100vh 3px 4px #c19123, 31vw -133vh 1px 2px #cbdd0a, -22vw -85vh 1px 3px #d23078, 93vw -93vh 3px 1px #348afe, -87vw -50vh 2px 1px #5d8599, 27vw -112vh 1px 2px #cc6c7f, -57vw -146vh 5px 1px #f58d68, 53vw -126vh 8px 5px #19bd1e, -26vw -125vh 8px 5px #4cdc15, 89vw -59vh 3px 2px #bd3e6e, -59vw -148vh 2px 2px #af3c68, 56vw -130vh 5px 3px #b82712, -89vw -109vh 2px 3px #679e57, 65vw -65vh 5px 3px #42973c, -73vw -80vh 1px 2px #295ae1, 11vw -110vh 1px 5px #58ee0f, -29vw -124vh 5px 4px #bb9a1b, 62vw -104vh 5px 3px #724747, -97vw -126vh 4px 2px #6adf02, 17vw -116vh 5px 5px #d7a4a5, -90vw -141vh 1px 3px #2bc018, 78vw -52vh 8px 4px #663aa2, -52vw -114vh 5px 1px #362041, 44vw -122vh 6px 4px #716349, -63vw -50vh 2px 2px #4f2f74, 58vw -69vh 6px 1px #70ed2c, -19vw -60vh 8px 5px #ca1c68, 90vw -65vh 2px 4px #37caae, -1vw -55vh 6px 1px #2e7035, 27vw -77vh 5px 1px #5f77bf, -69vw -50vh 1px 2px #0a84fa, 64vw -108vh 4px 5px #a68c27, -45vw -122vh 2px 4px #7ad1ee, 78vw -98vh 8px 5px #783f21, -15vw -66vh 2px 4px #7ed02b, 30vw -56vh 2px 4px #b5f53e, -71vw -98vh 4px 5px #5c2aa8, 21vw -93vh 8px 2px #ec9dba, -57vw -99vh 5px 2px #e82ae8;
+    }
+    100% {
+      box-shadow: 0 0 0 transparent, 52vw 101vh 1px 4px #237913, -31vw 140vh 7px 5px #a510ec, 16vw 102vh 1px 4px #a6ba03, -88vw 81vh 7px 2px #accf7d, 27vw 99vh 7px 3px #eb3904, -8vw 61vh 7px 1px #70e104, 53vw 105vh 8px 2px #43ab2e, -61vw 119vh 3px 5px #bb8ef5, 89vw 107vh 6px 2px #f5831b, -20vw 104vh 1px 3px #12b4d9, 7vw 118vh 4px 4px #02f45b, -9vw 134vh 7px 4px #9f8ea4, 26vw 123vh 2px 4px #a4c109, -49vw 82vh 2px 3px #61810d, 84vw 74vh 5px 3px #96523e, -59vw 98vh 1px 5px #3d0dcd, 45vw 94vh 7px 3px #a12a93, -52vw 95vh 5px 5px #2de7d6, 100vw 98vh 6px 2px #61fb9c, -2vw 117vh 6px 1px #c4ab6a, 53vw 55vh 4px 1px #02cdbe, -3vw 88vh 7px 3px #a6b260, 73vw 141vh 3px 5px #ef50c1, -75vw 129vh 4px 1px #76d6ce, 60vw 89vh 8px 1px #4be7a3, -7vw 110vh 6px 2px #01b44a, 98vw 134vh 5px 1px #59c515, -58vw 88vh 3px 2px #fa1704, 56vw 117vh 8px 1px #5235ad, -54vw 145vh 2px 3px #41cafb, 97vw 141vh 1px 2px #7b6aee, -11vw 81vh 3px 3px #3f38c6, 63vw 70vh 6px 1px #f73701, -36vw 102vh 1px 5px #0e4c31, 1vw 101vh 8px 1px #4850c8, -18vw 88vh 4px 3px #8a4038, 8vw 126vh 6px 1px #61c036, -21vw 132vh 7px 1px #c3ef9b, 18vw 149vh 8px 1px #923976, -15vw 68vh 8px 2px #45423b, 18vw 92vh 2px 2px #6cbf35, -12vw 115vh 6px 1px #f33272, 68vw 69vh 7px 1px #c56a21, -99vw 147vh 1px 4px #c0f062, 34vw 146vh 6px 2px #421250, -69vw 137vh 3px 3px #cf49c9, 85vw 95vh 1px 4px #0c4c84, -24vw 129vh 3px 4px #dc363b, 42vw 87vh 8px 4px #b5fca7, -21vw 88vh 4px 1px #75d2e4;
+    }
+  }
